@@ -51,3 +51,25 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 });
+
+// --- CÓDIGO PARA MOSTRAR MENU APENAS NO TOPO ---
+// Substitua o código de rolagem anterior por este bloco
+
+window.addEventListener("scroll", function() {
+    const topBar = document.querySelector(".top-bar");
+    const nav = document.querySelector("nav");
+    const headerSection = document.querySelector(".header__container");
+
+    // Calcula a altura da seção do header
+    const headerHeight = headerSection.offsetHeight;
+
+    // Se a rolagem passar da altura do header, esconde a navegação
+    if (window.pageYOffset > headerHeight) {
+        topBar.classList.add("hidden");
+        nav.classList.add("hidden");
+    } else {
+        // Caso contrário, mostra a navegação
+        topBar.classList.remove("hidden");
+        nav.classList.remove("hidden");
+    }
+});
