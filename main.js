@@ -56,7 +56,6 @@ const swiper = new Swiper(".swiper", {
 // Substitua o código de rolagem anterior por este bloco
 
 window.addEventListener("scroll", function() {
-    const topBar = document.querySelector(".top-bar");
     const nav = document.querySelector("nav");
     const headerSection = document.querySelector(".header__container");
 

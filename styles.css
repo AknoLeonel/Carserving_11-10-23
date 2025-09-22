@@ -134,7 +134,7 @@ body {
 nav {
   position: fixed;
   isolation: isolate;
-  top: 38px;
+  top: 0px;
   width: 100%;
   max-width: var(--max-width);
   margin: auto;
